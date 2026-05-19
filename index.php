@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="WykresyTauron6.css">  
 <link rel="shortcut icon" href="favicon.ico">
-<title>Viking transfer</title>
+<title>Wykresy Tauron</title>
 </head>
 <body>
 
@@ -24,6 +24,7 @@ if ($dbconnect->connect_error) {
 ?>
 
 <div id='WykresRamka250'>
+  <div class="tytulWykresu">dzienna produkcja i oddana energia</div>
 <?php
 
 #$query = mysqli_query($dbconnect, "SELECT Id, ROUND(((TotalDay)/10),0) AS Bajty FROM `TRANSFER` ORDER BY Id DESC LIMIT 24")
@@ -105,6 +106,7 @@ $query = mysqli_query($dbconnect, $queryzmienna)
 
 
 <div id='WykresRamka250' class='WykresRamkaPobrana'>
+  <div class="tytulWykresu">dzienna produkcja i zużyta energia</div>
 <?php
 
 ######################################### OSTATNI WYKRES - WYKRES 2 #####################
@@ -191,6 +193,7 @@ $query = mysqli_query($dbconnect, $queryzmienna)
 </br>
 
 <div id='WykresRamka250'>
+  <div class="tytulWykresu">miesięczne zużycie energii - strefy</div>
 <?php
 #################  WYKRES TARYFY ##################
 
@@ -278,6 +281,7 @@ $query = mysqli_query($dbconnect, $queryzmienna)
 </br>
 
 <div id='WykresRamka300' class='WykresRamkaPobrana'>
+  <div class="tytulWykresu">miesięczne zużycie energii + autokonsumpcja - strefy</div>
 
 <?php
 ######################################### OSTATNI WYKRES - WYKRES 3 #####################
@@ -396,6 +400,7 @@ $query3 = mysqli_query($dbconnect, $queryzmienna3)
 </div>
 <br>
 <div id='WykresRamka300' class='WykresRamkaPobrana'>
+  <div class="tytulWykresu">miesięczna produkcja i wysłana energia</div>
 
 <?php
 ######################################### OSTATNI WYKRES - WYKRES 4 #####################
